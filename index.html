@@ -1,0 +1,108 @@
+<!DOCTYPE <!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Calculator</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>=
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
+
+    <style>
+    * {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	font: normal 30px sans-serif;
+}
+
+#calculator {
+	width: 325px;
+	height: auto;
+	margin: 100px auto;
+	position:relative;
+	border-radius: 3px;
+}
+
+
+.display .screen {
+	height: 80px;
+	width: 81%;
+	position:absolute;
+  top:-75; left:0;
+	padding: 20px 10px;
+	background: rgb(100,89,100);
+	font-size: 27px;
+  font-weight:normal;
+	color: white;
+}
+
+.keys span {
+	float: left;
+	position: relative;
+	top: 0;
+	cursor: pointer;
+	width: 66px;
+	height: 56px;	
+	background: white;
+	color: black;
+	line-height: 56px;
+	text-align: center;
+    border: 1px solid rgb(142, 142, 142);
+	}
+    .keys span.zero{
+        width: 132px;
+    }
+
+.keys span.color {
+	background: rgb(243,146,49);
+    color: white;
+}
+
+.keys span:hover {
+	background: rgba(255,255,255,0.8);
+	color: black;
+}
+.keys span:active{
+    background-color: white;
+}
+
+
+
+    </style>
+
+    </head>
+    
+    <body>
+        
+        <div id="calculator">
+            <div class="display">
+                <div class="screen"></div>
+            </div>
+            
+            <div class="keys">
+                <span>AC</span>
+                <span>+/-</span>
+                <span>%</span>
+                <span class="color">÷</span>
+                <span>7</span>
+                <span>8</span>
+                <span>9</span>
+                <span class="color">x</span>
+                <span>4</span>
+                <span>5</span>
+                <span>6</span>
+                <span class="color">-</span>
+                <span>1</span>
+                <span>2</span>
+                <span>3</span>
+                <span class="color">+</span>
+                <span class="zero">0</span>
+                <span>.</span>
+                <span class="color">=</span>
+            </div>
+        </div>
+        
+   
+    </body>
+</html>
